@@ -1,3 +1,5 @@
+#Feito por Andrei
+#https://github.com/Andreirl032
 import pytube
 import urllib.request
 import PySimpleGUI as sg
@@ -7,7 +9,7 @@ def download_image(url, file_path, file_name):
     urllib.request.urlretrieve(url, full_path)
 
 layout = [
-    [sg.Text("DOWNLOAD DE COMPONENTES DO YOUTUBE")], 
+    [sg.Text("DOWNLOAD DE COMPONENTES DO YOUTUBE - POR ANDREI")], 
     [sg.Combo(["Vídeo","Áudio","Thumbnail"],default_value="",key="-COMBO-",readonly=True)],
     [sg.Text("Insira link para baixar vídeo do youtube")], 
     [sg.In(size=(25, 1), enable_events=True, key="-INPUTLINK-")],
